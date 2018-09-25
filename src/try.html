@@ -1,0 +1,17 @@
+<html>
+<body>
+    </body>    
+
+<script>
+function Sorting(arr,entries){
+var sorted = arr.sort();
+var BeforeArraySorted =  sorted.slice(sorted.indexOf(entries));
+var AfterArraySorted = [];
+for(var i = 0;i<sorted.indexOf(entries);i++){
+	AfterArraySorted.push(sorted[i]);
+}
+	return [...BeforeArraySorted,...AfterArraySorted];
+}
+console.log(Sorting(['aman','ball','cat','monk','and','z','m','a'],'m'));
+</script>
+</html>
